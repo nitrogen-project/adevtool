@@ -41,9 +41,7 @@ filters:
       - product/etc/sysconfig/quick_tap.xml
       - product/framework/com.google.android.dialer.support.jar
       - system/etc/permissions/privapp-permissions-google.xml
-      - system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
       - system_ext/etc/permissions/privapp-permissions-google-se.xml
-      - system_ext/framework/com.android.hotwordenrollment.common.util.jar
       - vendor/etc/default-permissions/default-permissions_talkback.xml
       - product/etc/sysconfig/google-install-constraints-package-allowlist.xml
       # Irrelevant OTA updater
@@ -206,7 +204,6 @@ filters:
       - product/priv-app/GoogleRestorePrebuilt
       - product/priv-app/HardwareInfo
       - product/priv-app/HelpRtcPrebuilt
-      - product/priv-app/HotwordEnrollment
       - product/priv-app/KidsSupervisionStub
       - product/priv-app/MaestroPrebuilt
       - product/priv-app/OTAConfigNoZeroTouchPrebuilt

@@ -237,6 +237,7 @@ filters:
       - system/app/CaptivePortalLoginGoogle
       - system/app/GoogleExtShared
       - system/app/GooglePrintRecommendationService
+      - system/app/Traceur
       - system/priv-app/DocumentsUIGoogle
       - system/priv-app/GooglePackageInstaller
       - system/priv-app/NetworkPermissionConfigGoogle

@@ -14,4 +14,4 @@ filters:
   dep_files:
     prefix:
       # Protobufs for inline carrier extraction
-      - product/etc/CarrierSettings
+      - product/etc/CarrierSettings/

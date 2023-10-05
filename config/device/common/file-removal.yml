@@ -36,7 +36,6 @@ filters:
       - product/etc/sysconfig/google_fi.xml
       - product/etc/sysconfig/kids_home_experience.xml
       - product/etc/sysconfig/nexus.xml
-      - product/etc/sysconfig/nga.xml
       - product/etc/sysconfig/pixel_2017-initial-package-stopped-states.xml
       - product/etc/sysconfig/pixel_2019_exclusive.xml
       - product/etc/sysconfig/pixel_docking_experience_2022.xml
@@ -58,10 +57,8 @@ filters:
       - product/etc/sysconfig/quick_tap.xml
       - product/framework/com.google.android.dialer.support.jar
       - system/etc/permissions/privapp-permissions-google.xml
-      - system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
       - system_ext/etc/permissions/com.google.android.apps.nest.dockmanager.app.xml
       - system_ext/etc/permissions/privapp-permissions-google-se.xml
-      - system_ext/framework/com.android.hotwordenrollment.common.util.jar
       - vendor/etc/default-permissions/default-permissions_talkback.xml
       - product/etc/sysconfig/google-install-constraints-package-allowlist.xml
       - system_ext/etc/sysconfig/google-nest-hiddenapi-package-whitelist.xml
@@ -172,8 +169,6 @@ filters:
       - product/app/MotionSenseBridgePrebuilt/
       # NexusWallpapersStubPrebuilt{2019,2020_midyear}
       - product/app/NexusWallpapers
-      # NGA is "Next generation Assistant"
-      - product/app/NgaResources/
       # com.google.vr.apps.ornament, found on 4th gen Pixels
       - product/app/Ornament/
       - product/app/Photos/
@@ -266,8 +261,6 @@ filters:
       - product/priv-app/HealthConnectPrebuilt/
       # "Google Support Services", https://play.google.com/store/apps/details?id=com.google.android.apps.helprtc
       - product/priv-app/HelpRtcPrebuilt/
-      # HotwordEnrollment{OKGoogleFUSION,OKGoogleHEMIDELTA,XGoogleFUSION etc}
-      - product/priv-app/HotwordEnrollment
       - product/priv-app/KidsHomePrebuilt/
       - product/priv-app/KidsSupervisionStub/
       # "Google Pixel Buds" app, com.google.android.apps.wearables.maestro.companion

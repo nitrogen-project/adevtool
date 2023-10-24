@@ -130,6 +130,7 @@ PRODUCT_PACKAGES += \
     bipchmgr \
     blue \
     capo \
+    CarrierSettings \
     cbd \
     cc \
     chre \

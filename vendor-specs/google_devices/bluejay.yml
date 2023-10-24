@@ -75,10 +75,10 @@ overlays/vendor_android/res: dir
 overlays/vendor_android/res/values: dir
 overlays/vendor_android/res/values/values.xml: 11815719c304cb1a6dd8abdee61d50bee3d5f6c5f4c1a892a14209d1269924b0
 proprietary: dir
-proprietary-files.txt: cf797e5912aa64ab10c44c3c3c0e2b08d6707115d9b13a9d5fcfe007f98a97f0
-proprietary/Android.bp: 57daa70fc5c07399e4bb918e201707efa59d56025ecd3838a9d240a434bf2f73
+proprietary-files.txt: 5665759f61e686b73d05470bf3167c0bfc751a6638a60a5689fc6b2216859209
+proprietary/Android.bp: 85d5f0a33d176d8f3baa07c7ed4037ab4000d4627858160f8918316d68271a89
 proprietary/BoardConfigVendor.mk: 11a96733f31675ff74278a0f553539f186dcf3fe5086f42cf2766bd57294df02
-proprietary/device-vendor.mk: ed2fef7aa2b071e370d9b5dc19859044be49504ba0f046610fafc6a713d52c3b
+proprietary/device-vendor.mk: 39919a0bf29517b0dd52577284ee4d8c04ed7002a994a451eed78f93a1a6e76c
 proprietary/product: dir
 proprietary/product/app: dir
 proprietary/product/app/NgaResources: dir
@@ -357,6 +357,8 @@ proprietary/product/lib64: dir
 proprietary/product/lib64/libdmengine.so: dace95ef33c59b912a270c1784e1db86eb1304cb133c806fc11ec15562a88a58
 proprietary/product/lib64/libdmjavaplugin.so: fa0535846225b0013568ca440e869b02fda0999d251e3bd1af541019a47f4269
 proprietary/product/priv-app: dir
+proprietary/product/priv-app/CarrierSettings: dir
+proprietary/product/priv-app/CarrierSettings/CarrierSettings.apk: 7f425cb8704835690a06a0be4acc764704ff996219d50de688a2b1ab6ed7ba31
 proprietary/product/priv-app/EuiccGoogle: dir
 proprietary/product/priv-app/EuiccGoogle/EuiccGoogle.apk: 26b259b8951ff45ddb10b2b255d4a2ec5b1fdeb75335b7f6e7fed3065823df6b
 proprietary/product/priv-app/HotwordEnrollmentOKGoogleFUSION: dir

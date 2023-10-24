@@ -225,7 +225,6 @@ filters:
       - product/priv-app/CarrierLocation/
       - product/priv-app/CarrierMetrics/
       - product/priv-app/CarrierServices/
-      - product/priv-app/CarrierSettings/
       - product/priv-app/CarrierWifi/
       - product/priv-app/CastAuthPrebuilt/
       # com.google.android.apps.cbrsnetworkmonitor

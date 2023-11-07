@@ -8,7 +8,6 @@ system_ext/etc/init/vendor.google.edgetpu_app_service@1.0-service.rc
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/etc/permissions/com.google.android.camera.experimental2022_system.xml
 system_ext/etc/permissions/com.google.android.camera.extensions.xml
-system_ext/etc/permissions/com.google.android.camerax.extensions.xml
 system_ext/etc/permissions/com.google.euiccpixel.permissions.xml
 system_ext/etc/permissions/com.google.euiccpixel.xml
 system_ext/etc/permissions/com.samsung.slsi.telephony.oemril.xml
@@ -22,7 +21,6 @@ system_ext/etc/vintf/manifest/vendor.google.edgetpu_app_service@1.0-service.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 system_ext/framework/com.google.android.camera.experimental2022_system.jar
 system_ext/framework/com.google.android.camera.extensions.jar
-system_ext/framework/com.google.android.camerax.extensions.jar
 system_ext/framework/google-ril.jar
 system_ext/framework/oemrilhook.jar
 system_ext/lib/libedgetpu_dba.google.so
@@ -49,13 +47,6 @@ system_ext/priv-app/PixelNfc/PixelNfc.apk
 system_ext/priv-app/ShannonIms/ShannonIms.apk;PRESIGNED
 system_ext/priv-app/ShannonQualifiedNetworksService/ShannonQualifiedNetworksService.apk;PRESIGNED
 system_ext/priv-app/ShannonRcs/ShannonRcs.apk;PRESIGNED
-system_ext/priv-app/SystemUIClocks-BigNum/SystemUIClocks-BigNum.apk
-system_ext/priv-app/SystemUIClocks-Calligraphy/SystemUIClocks-Calligraphy.apk
-system_ext/priv-app/SystemUIClocks-Flex/SystemUIClocks-Flex.apk
-system_ext/priv-app/SystemUIClocks-Growth/SystemUIClocks-Growth.apk
-system_ext/priv-app/SystemUIClocks-Inflate/SystemUIClocks-Inflate.apk
-system_ext/priv-app/SystemUIClocks-NumOverlap/SystemUIClocks-NumOverlap.apk
-system_ext/priv-app/SystemUIClocks-Weather/SystemUIClocks-Weather.apk
 product/app/NgaResources/NgaResources.apk
 product/etc/CarrierSettings/1and1_de.pb
 product/etc/CarrierSettings/2degrees_nz.pb

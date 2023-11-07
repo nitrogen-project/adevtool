@@ -6,12 +6,11 @@ PRODUCT_SOONG_NAMESPACES += \
 
 DEVICE_MANIFEST_FILE += vendor/google_devices/bluejay/vintf/adevtool_manifest_vendor.xml
 
-PRODUCT_SYSTEM_PROPERTIES += \
-    ro.hotword.detection_service_required=true \
-    ro.camerax.extensions.enabled=true
+PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += vendor/google_devices/bluejay/proprietary/linker-config-adevtool.json
 
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.gwfcactivation.disabled_carriers=1492 \
+    ro.preventative_fsck=1 \
     ro.vendor.camera.extensions.package=com.google.android.apps.camera.services \
     ro.vendor.camera.extensions.service=com.google.android.apps.camera.services.extensions.service.PixelExtensions
 
@@ -26,7 +25,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.ril.support_nr_ds=0 \
     persist.vendor.ril.ecc.use.xml=1
 
-PRODUCT_OVERRIDE_FINGERPRINT := google/bluejay/bluejay:14/UP1A.231005.007/10754064:user/release-keys
+PRODUCT_OVERRIDE_FINGERPRINT := google/bluejay/bluejay:14/UP1A.231105.003/11010452:user/release-keys
 
 PRODUCT_PACKAGES += \
     activity \
@@ -148,7 +147,6 @@ PRODUCT_PACKAGES += \
     com.google.android.camera.experimental2021 \
     com.google.android.camera.experimental2022_system \
     com.google.android.camera.extensions \
-    com.google.android.camerax.extensions \
     com.google.android.widevine \
     com.google.edgetpu_app_service-V2-ndk \
     com.google.edgetpu_app_service-V2-ndk__system_ext \
@@ -329,13 +327,6 @@ PRODUCT_PACKAGES += \
     ShannonRcs \
     smartbatching \
     sound_trigger.primary.gs101 \
-    SystemUIClocks-BigNum \
-    SystemUIClocks-Calligraphy \
-    SystemUIClocks-Flex \
-    SystemUIClocks-Growth \
-    SystemUIClocks-Inflate \
-    SystemUIClocks-NumOverlap \
-    SystemUIClocks-Weather \
     trusty_metricsd \
     twoshay \
     usf_stats \
@@ -1516,7 +1507,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/bluejay/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/google_devices/bluejay/proprietary/system_ext/etc/permissions/com.google.android.camera.experimental2022_system.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.android.camera.experimental2022_system.xml \
     vendor/google_devices/bluejay/proprietary/system_ext/etc/permissions/com.google.android.camera.extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.android.camera.extensions.xml \
-    vendor/google_devices/bluejay/proprietary/system_ext/etc/permissions/com.google.android.camerax.extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.android.camerax.extensions.xml \
     vendor/google_devices/bluejay/proprietary/system_ext/etc/permissions/com.google.euiccpixel.permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.euiccpixel.permissions.xml \
     vendor/google_devices/bluejay/proprietary/system_ext/etc/permissions/com.google.euiccpixel.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.euiccpixel.xml \
     vendor/google_devices/bluejay/proprietary/system_ext/etc/permissions/com.samsung.slsi.telephony.oemril.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.samsung.slsi.telephony.oemril.xml \

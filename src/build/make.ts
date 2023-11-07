@@ -52,6 +52,8 @@ export interface DeviceMakefile {
 
   vintfManifestPaths?: Map<string, string>
 
+  vendorLinkerConfigPath?: string
+
   props?: PartitionProps
   fingerprint?: string
   enforceRros?: string
@@ -193,6 +195,10 @@ export function serializeDeviceMakefile(mk: DeviceMakefile) {
     }
   }
 
+  if (mk.vendorLinkerConfigPath !== undefined) {
+    blocks.push(`PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += ${mk.vendorLinkerConfigPath}`)
+  }
+
   if (mk.props != undefined) {
     for (let [partition, props] of mk.props.entries()) {
       if (props.size == 0) {
@@ -234,6 +240,13 @@ PRODUCT_MANUFACTURER := ${mk.manufacturer}`)
 
   if (mk.enforceRros != undefined) {
     blocks.push(`PRODUCT_ENFORCE_RRO_TARGETS := ${mk.enforceRros}`)
+  }
+
+  let extraMakefiles = config?.platform?.extra_product_makefiles
+  if (extraMakefiles !== undefined && extraMakefiles.length > 0) {
+    for (let mk of extraMakefiles) {
+      blocks.push(`include ${mk}`)
+    }
   }
 
   let build_id = config?.device?.build_id

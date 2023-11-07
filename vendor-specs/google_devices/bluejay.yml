@@ -75,10 +75,18 @@ overlays/vendor_android/res: dir
 overlays/vendor_android/res/values: dir
 overlays/vendor_android/res/values/values.xml: 11815719c304cb1a6dd8abdee61d50bee3d5f6c5f4c1a892a14209d1269924b0
 proprietary: dir
+<<<<<<< HEAD
 proprietary-files.txt: 5665759f61e686b73d05470bf3167c0bfc751a6638a60a5689fc6b2216859209
 proprietary/Android.bp: 85d5f0a33d176d8f3baa07c7ed4037ab4000d4627858160f8918316d68271a89
 proprietary/BoardConfigVendor.mk: 11a96733f31675ff74278a0f553539f186dcf3fe5086f42cf2766bd57294df02
 proprietary/device-vendor.mk: 39919a0bf29517b0dd52577284ee4d8c04ed7002a994a451eed78f93a1a6e76c
+=======
+proprietary-files.txt: 8086b8e7f4327d50f5352d9310bc5a184f1125c70f1eaf14c039df9222fdfde8
+proprietary/Android.bp: 065f388f1cbfbcd9be8c3df256b4302a620a1477ab77d4abb94f9332f0fa8786
+proprietary/BoardConfigVendor.mk: 11a96733f31675ff74278a0f553539f186dcf3fe5086f42cf2766bd57294df02
+proprietary/device-vendor.mk: 131ccbf903f34de5b754719e65d680bfd8317e588aa8b6f24907de219cc56b9a
+proprietary/linker-config-adevtool.json: 6b3c6b57416c259790eb479ca3bf9575437bc060fd7439a96b2826785f73bcfc
+>>>>>>> aosp/14
 proprietary/product: dir
 proprietary/product/app: dir
 proprietary/product/app/NgaResources: dir
@@ -361,10 +369,13 @@ proprietary/product/priv-app/CarrierSettings: dir
 proprietary/product/priv-app/CarrierSettings/CarrierSettings.apk: 7f425cb8704835690a06a0be4acc764704ff996219d50de688a2b1ab6ed7ba31
 proprietary/product/priv-app/EuiccGoogle: dir
 proprietary/product/priv-app/EuiccGoogle/EuiccGoogle.apk: 26b259b8951ff45ddb10b2b255d4a2ec5b1fdeb75335b7f6e7fed3065823df6b
+<<<<<<< HEAD
 proprietary/product/priv-app/HotwordEnrollmentOKGoogleFUSION: dir
 proprietary/product/priv-app/HotwordEnrollmentOKGoogleFUSION/HotwordEnrollmentOKGoogleFUSION.apk: b5eff0f62a58fbc33c70c6c8d5ba354a06dbc7aae45b18d9c6afcd3a541efb4b
 proprietary/product/priv-app/HotwordEnrollmentXGoogleFUSION: dir
 proprietary/product/priv-app/HotwordEnrollmentXGoogleFUSION/HotwordEnrollmentXGoogleFUSION.apk: 3eea755e5ae7c5bd61132f17275def7e5c16818cb4a206023b056a5066212ccc
+=======
+>>>>>>> aosp/14
 proprietary/system_ext: dir
 proprietary/system_ext/app: dir
 proprietary/system_ext/app/OemRilHookService: dir
@@ -395,10 +406,15 @@ proprietary/system_ext/etc/vintf: dir
 proprietary/system_ext/etc/vintf/manifest: dir
 proprietary/system_ext/etc/vintf/manifest/vendor.google.edgetpu_app_service@1.0-service.xml: 440dcac59351c0a42989ab0761b83040dd06ed4a79c9dc20912bc6ac57d329e7
 proprietary/system_ext/framework: dir
+<<<<<<< HEAD
 proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar: 71236a41a25c2e565eb7ec4b5c53289404a2579aa015fa2506033c96e4b5575e
 proprietary/system_ext/framework/com.google.android.camera.experimental2022_system.jar: 46f113a8394a0a4c09d68594456bae104ca234e2aadcc961bf6843861f1f0d88
 proprietary/system_ext/framework/com.google.android.camera.extensions.jar: a75c29bd24780e1c088e08c3c9ba96a0baec40586c857e880e722f8492b21fcb
 proprietary/system_ext/framework/com.google.android.camerax.extensions.jar: e741ed7f6adce53df8eb5c7dad4672d88569789f150119aad11e88ae98b9ee09
+=======
+proprietary/system_ext/framework/com.google.android.camera.experimental2022_system.jar: 46f113a8394a0a4c09d68594456bae104ca234e2aadcc961bf6843861f1f0d88
+proprietary/system_ext/framework/com.google.android.camera.extensions.jar: a75c29bd24780e1c088e08c3c9ba96a0baec40586c857e880e722f8492b21fcb
+>>>>>>> aosp/14
 proprietary/system_ext/framework/google-ril.jar: 24078a215055f6aaa271eb35b3ba226f8f107d15f25e1ca3db0a871ade1e497e
 proprietary/system_ext/framework/oemrilhook.jar: e2355618f9e849646845efad71d1079e64f79ecd651582ed88ff502fe3c8c147
 proprietary/system_ext/lib: dir
@@ -436,6 +452,7 @@ proprietary/system_ext/priv-app/ShannonQualifiedNetworksService: dir
 proprietary/system_ext/priv-app/ShannonQualifiedNetworksService/ShannonQualifiedNetworksService.apk: 60daadddf93561569ee9f65f9bcbab0cdbfa45b18e6d5b0a602df6cdc1ea907a
 proprietary/system_ext/priv-app/ShannonRcs: dir
 proprietary/system_ext/priv-app/ShannonRcs/ShannonRcs.apk: c5314bcd5e818ba54ecb6cd0fabd0bcbc650b28e60bbd6e60efedb0a30899f40
+<<<<<<< HEAD
 proprietary/system_ext/priv-app/SystemUIClocks-BigNum: dir
 proprietary/system_ext/priv-app/SystemUIClocks-BigNum/SystemUIClocks-BigNum.apk: 3152dc64273012ad5e41cdabcdb237e83739ac1e10ee9479c1dc83c8aeaee313
 proprietary/system_ext/priv-app/SystemUIClocks-Calligraphy: dir
@@ -450,6 +467,8 @@ proprietary/system_ext/priv-app/SystemUIClocks-NumOverlap: dir
 proprietary/system_ext/priv-app/SystemUIClocks-NumOverlap/SystemUIClocks-NumOverlap.apk: 83dad92ae859f0c11f17b938661dd2ad0b12124f71abae513136860c8c3672a5
 proprietary/system_ext/priv-app/SystemUIClocks-Weather: dir
 proprietary/system_ext/priv-app/SystemUIClocks-Weather/SystemUIClocks-Weather.apk: 3c10ebcac8f0738d3402d0f44b26bcba2a77613cde81e8409aab2059a9dd82e4
+=======
+>>>>>>> aosp/14
 proprietary/vendor: dir
 proprietary/vendor/apex: dir
 proprietary/vendor/apex/com.google.android.widevine.apex: 926acbdef1aab2c55a29a84304f1370be830ae32bbd65a4dcd88e3cf3337c7ba

@@ -97,6 +97,8 @@ filters:
       # Unused RadioConfigLib.jar
       - system_ext/etc/permissions/com.android.omadm.radioconfig.xml
       - system_ext/framework/RadioConfigLib.jar
+      - system_ext/etc/permissions/com.google.android.camerax.extensions.xml
+      - system_ext/framework/com.google.android.camerax.extensions.jar
       # Unused hardware info jar
       - product/etc/permissions/com.google.android.hardwareinfo.xml
       - product/framework/libhwinfo.jar
@@ -156,6 +158,7 @@ filters:
       - product/app/GoogleCamera/
       - product/app/GoogleContacts/
       - product/app/GoogleContactsSyncAdapter/
+      - product/app/GoogleKeepPrebuilt/
       - product/app/GoogleTTS/
       # Gboard
       - product/app/HealthConnectHideApps/
@@ -164,6 +167,7 @@ filters:
       - product/app/Maps/
       # com.google.android.markup is a screenshot/image editor
       - product/app/MarkupGoogle/
+      - product/app/MeetPrebuilt/
       - product/app/MicropaperPrebuilt/
       - product/app/ModuleMetadataGoogle/
       - product/app/MotionSenseBridgePrebuilt/
@@ -211,6 +215,7 @@ filters:
       - product/app/talkback/
       - product/priv-app/AdaptiveVPNPrebuilt/
       - product/priv-app/AICorePrebuilt/
+      - product/priv-app/AiWallpapers/
       # "Pixel Ambient Services", com.google.intelligence.sense, found on 4th and 5th gen
       - product/priv-app/AmbientSensePrebuilt/
       # "Cross-Device Services", com.google.ambient.streaming, used for integration with ChromeOS
@@ -243,6 +248,8 @@ filters:
       # com.android.sdm.plugins.diagmon, but included on Tensor Pixels too
       - product/priv-app/DiagMon/
       - product/priv-app/DiagnosticsToolPrebuilt/
+      # Google Docker app moved to product partition as of 14
+      - product/priv-app/DockManagerPrebuilt/
       # DreamlinerPrebuilt is the Pixel Stand app, DreamlinerUpdater is firmware updater for Pixel Stand
       - product/priv-app/Dreamliner
       - product/priv-app/FilesPrebuilt/
@@ -258,6 +265,7 @@ filters:
       # them to Google. Runs each time device finishes booting.
       - product/priv-app/HardwareInfo/
       - product/priv-app/HealthConnectPrebuilt/
+      - product/priv-app/HealthIntelligenceStubPrebuilt/
       # "Google Support Services", https://play.google.com/store/apps/details?id=com.google.android.apps.helprtc
       - product/priv-app/HelpRtcPrebuilt/
       - product/priv-app/KidsHomePrebuilt/
@@ -306,6 +314,7 @@ filters:
       # Google search app (GSA), com.google.android.googlequicksearchbox
       - product/priv-app/Velvet/
       - product/priv-app/WallpaperEffect/
+      - product/priv-app/WeatherPixelPrebuilt/
       # Digital Wellbeing, https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing
       - product/priv-app/WellbeingPrebuilt/
       # Wi-Fi Calling setup, com.google.android.apps.wfcactivation
@@ -346,6 +355,8 @@ filters:
       - system_ext/priv-app/SettingsGoogle/
       - system_ext/priv-app/SettingsGoogleFutureFaceEnroll/
       - system_ext/priv-app/StorageManagerGoogle/
+      # SystemUI Clocks
+      - system_ext/priv-app/SystemUIClocks
       - system_ext/priv-app/SystemUIGoogle/
       # Pixel Tablet
       - system_ext/priv-app/SystemUITitan/

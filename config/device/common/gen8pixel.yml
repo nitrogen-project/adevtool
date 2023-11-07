@@ -1,0 +1,11 @@
+includes:
+  - pixel.yml
+  - gs.yml
+
+platform:
+  sepolicy_dirs:
+    - device/google/zuma-sepolicy
+
+device:
+  build_id: UD1A.231105.004
+  prev_build_id: UD1A.230803.041

@@ -5,10 +5,14 @@ platform:
 includes:
   - pixel-qcom.yml
 
+device:
+  build_id: UP1A.231105.001
+
 filters:
   files:
     match:
       - vendor/etc/vintf/manifest/manifest_wifi_ext.xml
+      - vendor/etc/vintf/manifest/manifest_wifi_ext_aidl.xml
 
   dep_files:
     match:

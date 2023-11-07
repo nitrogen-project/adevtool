@@ -6,7 +6,13 @@ import { copyBlobs } from '../blobs/copy'
 import { BlobEntry } from '../blobs/entry'
 import { DEVICE_CONFIG_FLAGS, DeviceBuildId, DeviceConfig, getDeviceBuildId, loadDeviceConfigs } from '../config/device'
 import { forEachDevice } from '../frontend/devices'
-import { enumerateFiles, extractProps, generateBuildFiles, PropResults } from '../frontend/generate'
+import {
+  enumerateFiles,
+  extractProps,
+  generateBuildFiles,
+  PropResults,
+  writeEnvsetupCommands,
+} from '../frontend/generate'
 import { DeviceImages, prepareFactoryImages, WRAPPED_SOURCE_FLAGS, wrapSystemSrc } from '../frontend/source'
 import { loadBuildIndex } from '../images/build-index'
 import { withSpinner } from '../util/cli'
@@ -61,8 +67,10 @@ const doDevice = (
 
     // 4. Build files
     await withSpinner('Generating build files', () =>
-      generateBuildFiles(config, dirs, entries, [], propResults, null, null, null, stockSrc, false, true),
+      generateBuildFiles(config, dirs, entries, [], propResults, null, null, null, null, stockSrc, false, true),
     )
+
+    await writeEnvsetupCommands(config, dirs)
   })
 
 export default class GeneratePrep extends Command {
@@ -118,6 +126,10 @@ export default class GeneratePrep extends Command {
           stockSrc = flags.stockSrc!
           buildId = flags.buildId
         }
+
+        // these makefiles are expected to reference proprietary files that are
+        // inaccessible during state collection build
+        config.platform.extra_product_makefiles = []
 
         await doDevice(config, stockSrc, buildId, flags.skipCopy, flags.useTemp)
       },

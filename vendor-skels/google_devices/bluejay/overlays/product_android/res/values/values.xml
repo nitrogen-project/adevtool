@@ -12,7 +12,13 @@
   <string name="config_ambientContextPackageNameExtraKey">PACKAGE_NAME</string>
   <string name="config_clockFontFamily">google-sans-clock</string>
   <string name="config_defaultAccessibilityNotificationSound">Effect_Tick.ogg</string>
+  <string name="config_defaultContextualSearchEnabled">omni.enable_cs_helper</string>
+  <string name="config_defaultContextualSearchKey">omni.entry_point</string>
+  <string name="config_defaultContextualSearchLegacyEnabled">omni.enable_vis</string>
+  <string name="config_defaultContextualSearchPackageName">com.google.android.googlequicksearchbox</string>
+  <string name="config_defaultWallet">com.google.android.gms</string>
   <string name="config_icon_mask">M50 0C77.6 0 100 22.4 100 50C100 77.6 77.6 100 50 100C22.4 100 0 77.6 0 50C0 22.4 22.4 0 50 0Z</string>
+  <string name="config_oemCredentialManagerDialogComponent">com.google.android.gms/.identitycredentials.ui.CredentialChooserActivity</string>
   <string name="face_recalibrate_notification_content">Face unlock may not work until you re-enroll</string>
   <string name="face_recalibrate_notification_name">Face unlock</string>
   <string name="face_recalibrate_notification_title">Please re-enroll your face</string>
